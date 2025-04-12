@@ -32,19 +32,23 @@ const prompt= require('prompt-sync')();
 // ASSIGNMENT 3 Recipie book
 // 
 
+
+
+const randomNumber= Math.floor(Math.random()*8)
+
 const recipeList=[
-    {name: "Garri", link: "https://garri.ng"},
-    {name: "Jollof Rice", link: "https://jollofrice.ng"},
-    {name: "Coconut Rice", link: "https://coconutrice.ng"},
-    {name: "Spaghetti", link: "https://spaghetti.ng"},
-    {name: "Amala", link: "https://amala.ng"},
-    {name: "Noodles", link: "https://noodles.ng"},
-    {name: "Croissant", link: "https://croissant.ng"},
-    {name: "Toast Bread", link: "https://toasts.ng"},
+    {id:1, name: "Garri", link: "https://garri.ng"},
+    {id:2, name: "Jollof Rice", link: "https://jollofrice.ng"},
+    {id:3, name: "Coconut Rice", link: "https://coconutrice.ng"},
+    {id:4, name: "Spaghetti", link: "https://spaghetti.ng"},
+    {id:5, name: "Amala", link: "https://amala.ng"},
+    {id:6, name: "Noodles", link: "https://noodles.ng"},
+    {id:7, name: "Croissant", link: "https://croissant.ng"},
+    {id:8, name: "Toast Bread", link: "https://toasts.ng"},
 ]
 
-recipeList.forEach((recipe)=>{
-  console.log(  recipe.name)
-  
-})
+
+const randomRecipe = recipeList[randomNumber]
+
+console.log(`${randomRecipe.name}. Recipe link: ${randomRecipe.link}`)
 
